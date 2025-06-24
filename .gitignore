@@ -40,6 +40,6 @@ build/
 ### Project Files ###
 *.exe
 target
-test-output/screenshots/*
-test-output/on-start-screenshots/*
+#test-output/screenshots/*
+#test-output/on-start-screenshots/*
 logs/*
