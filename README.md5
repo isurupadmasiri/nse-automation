@@ -13,7 +13,7 @@
 - IDE (eg: IntelliJ IDEA, Eclipse)
 
 ## Setup Instructions
-1. ### Download the project to local machine
+1. ### Download the project to local machine or git clone 'https://github.com/isurupadmasiri/nse-automation.git'
 2. ### Import project to IDE (eg: IntelliJ IDEA)
 3. ### Install Dependencies
     - mvn install / mvn clean install
