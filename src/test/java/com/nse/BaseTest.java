@@ -42,12 +42,18 @@ public class BaseTest {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-blink-features=AutomationControlled");
             options.addArguments("--disable-extensions");
+            //options.addArguments("--headless=new");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--enable-features=NetworkService,NetworkServiceInProcess");
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("Firefox")) {
             WebDriverManager.firefoxdriver().setup();
             FirefoxOptions options = new FirefoxOptions();
             options.addPreference("dom.webnotifications.enabled", false);
             options.addPreference("media.autoplay.default", 0);
+            //options.setHeadless(true);
             driver = new FirefoxDriver(options);
         } else if (browser.equalsIgnoreCase("Edge")) {
             WebDriverManager.edgedriver().setup();
@@ -55,7 +61,9 @@ public class BaseTest {
             options.setCapability("ms:edgeOptions", Map.of(
                     "args", List.of(
                             "--disable-blink-features=AutomationControlled",
-                            "--disable-extensions"
+                            "--disable-extensions",
+                            //"--headless=new",
+                            "--disable-gpu"
                     )
             ));
             driver = new EdgeDriver(options);
