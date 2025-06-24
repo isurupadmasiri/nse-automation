@@ -1,0 +1,39 @@
+# NSE India - Test Automation Suite
+
+### This repository contains automated UI tests for the NSE India web application using Java, Selenium WebDriver, TestNG, and Maven.
+
+---
+
+## Prerequisites
+
+### Make sure the following are installed.
+- Java JDK 17+
+- Maven
+- Chrome, Edge and Firefox browsers
+- IDE (eg: IntelliJ IDEA, Eclipse)
+
+## Setup Instructions
+1. ### Download the project to local machine
+2. ### Import project to IDE (eg: IntelliJ IDEA)
+3. ### Install Dependencies
+    - mvn install / mvn clean install
+4. ### Run Tests using testng.xml
+
+## Test Reporting
+- After test execution completion, extent report is generated in `test-output/extent-reports` directory.
+- Report is viewable on any browser
+
+## Logging
+- Framework is configured with log4j for logging purposes
+- Configuration is available in `log4js.xml` at `src/main/resources/`
+
+## Properties
+- All properties are read from 'config.yaml' file located at 'src/main/resources/'
+
+## Tech Stack
+- Java
+- Selenium WebDriver
+- TestNG
+- Maven
+- Page Object Model (POM) design pattern
+

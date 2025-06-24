@@ -1,0 +1,5 @@
+baseUrl: https://www.nseindia.com/
+indicesPageUrl: /market-data/live-market-indices
+stocksPageUrl: /market-data/live-equity-market?symbol=
+equityPageUrl: /get-quotes/equity?symbol=
+timeout: 20

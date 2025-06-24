@@ -1,0 +1,130 @@
+# NSE Automated Test Case Documentation
+
+## Test Case: Verify that the NSE home page loads successfully
+**Test ID**: TC001
+**Module**: UI
+**Priority**: High
+**Browser**: Chrome, Edge, Firefox
+**Automation Status**: Automated
+**Author**: Isuru Padmasiri
+**Last Updated**: 06/23/2025
+
+### Pre-Conditions
+- Open the browser
+
+
+### Test Steps
+1. Fetch NSE Base URL
+
+
+### Expected Result
+- User is redirected to the Home Page
+- Logo is displayed
+- Search bar is visible
+
+### Post-conditions
+- Close the browser
+
+### Related Test Script
+- `HomePageTest.java`
+
+---
+
+## Test Case: Verify that the Indices Page loads successfully
+**Test ID**: TC002
+**Module**: UI
+**Priority**: High
+**Browser**: Chrome, Edge, Firefox
+**Automation Status**: Automated
+**Author**: Isuru Padmasiri
+**Last Updated**: 06/23/2025
+
+### Pre-onditions
+- Open the browser
+
+
+### Test Steps
+1. Fetch NSE Base URL
+2. Wait for Home Page load
+3. Select Market Data > Indices from top navigation menu
+
+
+### Expected Result
+- User is redirected to the Indices Page
+- Correct page header is displayed
+
+### Post-conditions
+- Close the browser
+
+### Related Test Script
+- `IndicesPageTest.java`
+
+---
+
+## Test Case: Verify that the Stocks Page loads successfully
+**Test ID**: TC003
+**Module**: UI
+**Priority**: High
+**Browser**: Chrome, Edge, Firefox
+**Automation Status**: Automated
+**Author**: Isuru Padmasiri
+**Last Updated**: 06/23/2025
+
+### Pre-onditions
+- Open the browser
+
+### Test Steps
+1. Fetch NSE Base URL
+2. Wait for Home Page load
+3. Select Market Data > Indices from top navigation menu
+4. Wait for Indices Page load
+5. Select given "index" from the table (eg: NIFTY 50)
+
+
+### Expected Result
+- User is redirected to the Stocks Page
+- Correct page header is displayed
+
+### Post-conditions
+- Close the browser
+
+### Related Test Script
+- `StocksPageTest.java`
+
+---
+
+## Test Case: Verify that the Equity Page loads successfully
+**Test ID**: TC004
+**Module**: UI
+**Priority**: High
+**Browser**: Chrome, Edge, Firefox
+**Automation Status**: Automated
+**Author**: Isuru Padmasiri
+**Last Updated**: 06/23/2025
+
+### Pre-onditions
+- Open the browser
+
+### Test Steps
+1. Fetch NSE Base URL
+2. Wait for Home Page load
+3. Select Market Data > Indices from top navigation menu
+4. Wait for Indices Page load
+5. Select given "index" from the table (eg: NIFTY 50)
+6. Wait for Stocks Page load
+7. Select given symbol from the table (eg: TATAMOTORS)
+8. Repeat step 7 for different symbols (eg: RELIANCE)
+
+
+### Expected Result
+- User is redirected to the Equity Page for TATAMOTOTS
+- Correct title is displayed
+- Price Information table is displayed
+- Price displayed for "52 Week High" should match with expected value
+- Price displayed for "52 Week Low" should match with expected value
+
+### Post-conditions
+- Close the browser
+
+### Related Test Script
+- `EquityPageTest.java`
